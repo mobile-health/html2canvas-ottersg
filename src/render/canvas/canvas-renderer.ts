@@ -1,5 +1,5 @@
 import {ElementPaint, parseStackingContexts, StackingContext} from '../stacking-context';
-import {asString, Color, isTransparent} from '../../css/types/color';
+import {Color} from '../../css/types/color';
 import {ElementContainer, FLAGS} from '../../dom/element-container';
 import {BORDER_STYLE} from '../../css/property-descriptors/border-style';
 import {CSSParsedDeclaration} from '../../css';
@@ -44,6 +44,7 @@ import {PAINT_ORDER_LAYER} from '../../css/property-descriptors/paint-order';
 import {Renderer} from '../renderer';
 import {Context} from '../../core/context';
 import {DIRECTION} from '../../css/property-descriptors/direction';
+import {asString, isTransparent} from '../../css/types/color-utilities';
 
 export type RenderConfigurations = RenderOptions & {
     backgroundColor: Color | null;

@@ -55,7 +55,7 @@ import {wordBreak} from './property-descriptors/word-break';
 import {zIndex} from './property-descriptors/z-index';
 import {CSSValue, isIdentToken, Parser} from './syntax/parser';
 import {Tokenizer} from './syntax/tokenizer';
-import {Color, color as colorType, isTransparent} from './types/color';
+import {Color, color as colorType} from './types/color';
 import {angle} from './types/angle';
 import {image} from './types/image';
 import {time} from './types/time';
@@ -80,6 +80,7 @@ import {paintOrder} from './property-descriptors/paint-order';
 import {webkitTextStrokeColor} from './property-descriptors/webkit-text-stroke-color';
 import {webkitTextStrokeWidth} from './property-descriptors/webkit-text-stroke-width';
 import {Context} from '../core/context';
+import {isTransparent} from './types/color-utilities';
 
 export class CSSParsedDeclaration {
     animationDuration: ReturnType<typeof duration.parse>;

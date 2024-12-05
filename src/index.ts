@@ -1,11 +1,12 @@
 import {Bounds, parseBounds, parseDocumentSize} from './css/layout/bounds';
-import {COLORS, isTransparent, parseColor} from './css/types/color';
+import {COLORS, parseColor} from './css/types/color';
 import {CloneConfigurations, CloneOptions, DocumentCloner, WindowOptions} from './dom/document-cloner';
 import {isBodyElement, isHTMLElement, parseTree} from './dom/node-parser';
 import {CacheStorage} from './core/cache-storage';
 import {CanvasRenderer, RenderConfigurations, RenderOptions} from './render/canvas/canvas-renderer';
 import {ForeignObjectRenderer} from './render/canvas/foreignobject-renderer';
 import {Context, ContextOptions} from './core/context';
+import {isTransparent} from './css/types/color-utilities';
 
 export type Options = CloneOptions &
     WindowOptions &

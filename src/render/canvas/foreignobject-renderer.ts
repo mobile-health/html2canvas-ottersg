@@ -1,8 +1,9 @@
 import {RenderConfigurations} from './canvas-renderer';
 import {createForeignObjectSVG} from '../../core/features';
-import {asString} from '../../css/types/color';
+
 import {Renderer} from '../renderer';
 import {Context} from '../../core/context';
+import {asString} from '../../css/types/color-utilities';
 
 export class ForeignObjectRenderer extends Renderer {
     canvas: HTMLCanvasElement;

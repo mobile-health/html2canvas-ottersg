@@ -1,7 +1,7 @@
 import {deepStrictEqual} from 'assert';
 import {Parser} from '../../syntax/parser';
 import {CSSImageType, image} from '../image';
-import {color, pack} from '../color';
+import {color} from '../color';
 import {FLAG_INTEGER, TokenType} from '../../syntax/tokenizer';
 import {deg} from '../angle';
 
@@ -12,6 +12,7 @@ jest.mock('../../../core/features');
 
 jest.mock('../../../core/context');
 import {Context} from '../../../core/context';
+import {pack} from '../color-utilities';
 
 describe('types', () => {
     let context: Context;
